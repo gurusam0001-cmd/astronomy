@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: transparent;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 1000;
+    background-clip: text;
+    background-image: url(images/pimg1.png);
+    object-fit: cover;
+    padding-left: 20px;
+    
+   
+}
+h1 img{
+    width: 400px;
+}
+header{
+    display: flex;
+    background:linear-gradient(135deg  , grey , #000 );
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.img-container img{
+    object-fit: cover;
+    height: 80vh;
+    width: 100%;
+    background-attachment: fixed;
+    
+}
+.icon img{
+    width: 25px;
+  
+    margin-right: 40px;
+  
+}
+
+header ul li{
+list-style: none;
+display:inline-block;
+padding: 20px;
+transition: 0.3s ease-in-out;
+}
+
+header ul li:hover{
+    color: crimson;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.08);
+}
+#moon{
+    padding-right: 40px;
+    color: black;
+    font-size: 40px;
+}
+#moon:hover{
+    color: white;
+    
+}
+.icon{
+    transition: 0.3s ease-in-out;
+
+
+}
+
+.icon:hover{
+transform: scale(1.09);
+color: crimson;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    background-image: url(images/webb-tarantula-neb.webp);
+    background-attachment: fixed;
+    
+    
+}
+
+.explore-btn{
+    font-size: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    font-weight: 800;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    padding: 30px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    color: #fff;
+    
+
+}
+.mystery{
+
+        
+}
+.mystery h2{
+    font-size: 60px;
+    padding: 15px;
+   
+
+
+
+}
+
+.mystery p{
+    padding-top: 30px;
+    padding: 10px;
+    margin: auto;
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 30px;
+    
+    
+}
+
+.Black-Hole ,.Dark-energy ,.dark-matter{
+    width: 320px;
+    padding: 20px 10 20px 10;
+    /* border: 2px solid black; */
+    margin: auto;
+    min-height: 600px;
+    border-radius: 14px;
+    color: white;
+     
+    box-shadow: 15px 29px 20px rgba(0, 0, 0, 0.4);
+}
+
+.info{
+    display: flex;
+    gap: 10px;
+    align-self: center;
+    justify-content: space-between;
+
+}
+
+
+
+.dark-matter{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/darkmatter.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+
+.dark-matter p{
+    color: white;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.Black-Hole{
+background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/blackhole.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.Black-Hole p{
+    color: white;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.Dark-energy{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/DARK\ ENERGY.jpg);
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.Dark-energy p{
+    color: white;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.blackhole-doc ,.darkmatter-doc ,.darkenergy-doc {
+    padding: 20px;
+    margin-top: 30px;
+
+}
+
+.blackhole-doc h2 ,.darkmatter-doc h2 ,.darkenergy-doc h2{
+    font-size: 50px;
+    padding-bottom: 20px;
+
+}
+
+.blackhole-doc p ,.darkmatter-doc p ,.darkenergy-doc p{
+    font-size: 20px;
+}
+
+.img-container img{
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    background: linear-gradient(-45deg, #8e2de2, #ff6ec4, #4facfe, #00f2fe);
+    background-size: 400% 400%;
+    animation: gradientMove 12s linear infinite;;
+}
+.animated-text {
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(270deg, #ff512f, #dd2476, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textGradient 8s ease infinite;
+}
+footer p {
+    text-shadow: 0 0 8px rgba(255,255,255,0.4);
+}
+
+/* Animation */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes textGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@media (max-width: 480px){
+    header h1{
+        font-size: 35px;
+
+    }
+    header{
+        display: flex;
+    flex-direction: column;
+       
+    }
+    header ul li{
+        font-size: 15px;
+        padding: 10px;
+    }
+    #moon{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .explore-btn{
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .mystery h2{
+        font-size: 30px;
+    }
+    .mystery p{
+        font-size: 18px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); */
+    }
+    .Black-Hole ,.Dark-energy ,.dark-matter{
+         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+         width: 250px;
+         padding: 10px;
+    }
+    .img-container img{
+        width: 320px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+
+}
